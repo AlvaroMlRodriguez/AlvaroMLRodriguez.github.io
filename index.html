@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletín Digital: Propiedad Intelectual y Ciudadanía Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        'light-bg': '#FFFFFF',
+                        'dark-bg': '#181818'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .page-content {
+            display: none;
+        }
+        .page-content.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-light-bg dark:bg-dark-bg text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-primary text-white shadow-lg">
+        <div class="max-w-4xl mx-auto p-6">
+            <h1 class="text-2xl md:text-3xl font-bold mb-2">Boletín Digital: Propiedad Intelectual y Ciudadanía Digital</h1>
+            <div class="text-sm md:text-base space-y-1 opacity-90">
+                <p><strong>Universidad Abierta Para Adultos</strong></p>
+                <p>Participante: Alvaro Manuel Rodríguez Cruz</p>
+                <p>Matrícula: 100093277</p>
+                <p>Asignatura: Ciencia, Tecnología y Sociedad</p>
+                <p>Fecha: 07 / 10 / 2025</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex overflow-x-auto scrollbar-hide">
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-primary text-primary font-medium" data-page="editorial">Editorial</button>
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-transparent text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" data-page="conceptos">Conceptos Clave</button>
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-transparent text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" data-page="educacion">Educación y Tecnología</button>
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-transparent text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" data-page="propiedad">Propiedad Intelectual</button>
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-transparent text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" data-page="recomendaciones">Recomendaciones</button>
+                <button class="nav-btn px-4 py-3 text-sm md:text-base whitespace-nowrap border-b-2 border-transparent text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" data-page="bibliografia">Bibliografía</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-6">
+        <!-- Editorial Page -->
+        <div id="editorial" class="page-content active fade-in">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Editorial</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Presentación del Boletín</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            El presente boletín analiza conceptos como el capital humano, el capital intelectual, la propiedad intelectual, el conocimiento útil y la sociedad digital. Este espacio está diseñado para informar, orientar y fomentar buenas prácticas en el uso de contenidos creativos y tecnológicos.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Propósito</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 dark:text-blue-300 mb-2">📚 Informar</h4>
+                                <p class="text-sm text-blue-700 dark:text-blue-300">Proporcionar conocimiento claro sobre derechos de autor, patentes y marcas, así como sobre el papel de organismos como ONDA y ONAPI en la República Dominicana.</p>
+                            </div>
+                            <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 dark:text-green-300 mb-2">🧠 Concienciar</h4>
+                                <p class="text-sm text-green-700 dark:text-green-300">Crear conciencia sobre la importancia de respetar la propiedad intelectual y los riesgos de la piratería.</p>
+                            </div>
+                            <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 dark:text-purple-300 mb-2">🧭 Orientar</h4>
+                                <p class="text-sm text-purple-700 dark:text-purple-300">Ofrecer recomendaciones y buenas prácticas para una participación responsable en la sociedad digital.</p>
+                            </div>
+                            <div class="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange-800 dark:text-orange-300 mb-2">💡 Fomentar la Innovación</h4>
+                                <p class="text-sm text-orange-700 dark:text-orange-300">Motivar a los lectores a proteger sus propias creaciones y contribuir a un ecosistema creativo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conceptos Clave Page -->
+        <div id="conceptos" class="page-content">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Conceptos Clave</h2>
+                
+                <div class="space-y-8">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-700 dark:text-blue-400">Capital Humano</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Es un recurso de producción determinado por el nivel de educación y capacitación de las personas que participan en un proceso productivo. El capital humano son las personas que integran una empresa y son fundamentales para cumplir con los objetivos establecidos.
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="text-xl font-semibold mb-3 text-green-700 dark:text-green-400">Capital Intelectual</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            Se refiere al valor del conocimiento colectivo de una empresa, que puede proporcionar beneficios económicos. Este valor intangible incluye todo lo que no sea físico y que agregue capacidad productiva a una organización.
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-purple-500 pl-4">
+                        <h3 class="text-xl font-semibold mb-3 text-purple-700 dark:text-purple-400">Conocimiento Útil</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                            Es aquel que el individuo puede comprender y aplicar para mejorar su vida. Sus características incluyen:
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <div class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700 dark:text-gray-300">Aplicabilidad</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700 dark:text-gray-300">Comprensión</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700 dark:text-gray-300">Adaptabilidad</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700 dark:text-gray-300">Valor Transformador</span>
+                            </div>
+                            <div class="flex items-center md:col-span-2">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                <span class="text-gray-700 dark:text-gray-300">Fomento del Aprendizaje Continuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educación y Tecnología Page -->
+        <div id="educacion" class="page-content">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Importancia en Educación y Tecnología</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-3 text-blue-800 dark:text-blue-300">💼 Capital Humano en Educación</h3>
+                        <p class="text-blue-700 dark:text-blue-300">La formación de maestros impacta el aprendizaje de los estudiantes.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-3 text-green-800 dark:text-green-300">🧠 Capital Intelectual en Educación</h3>
+                        <p class="text-green-700 dark:text-green-300">Instituciones que promueven investigación generan capital intelectual, contribuyendo al avance del conocimiento.</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-3 text-purple-800 dark:text-purple-300">📚 Conocimiento Útil en Educación</h3>
+                        <p class="text-purple-700 dark:text-purple-300">Currículos que integran habilidades prácticas preparan a los estudiantes para el mundo laboral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Propiedad Intelectual Page -->
+        <div id="propiedad" class="page-content">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Propiedad Intelectual</h2>
+                
+                <div class="space-y-6">
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                        La propiedad intelectual comprende los derechos legales que protegen las creaciones del pensamiento humano. Incluye:
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">⚖️</div>
+                            <h4 class="font-semibold text-red-800 dark:text-red-300 mb-2">Patentes</h4>
+                            <p class="text-sm text-red-700 dark:text-red-300">Derechos exclusivos sobre invenciones</p>
+                        </div>
+                        <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">📝</div>
+                            <h4 class="font-semibold text-yellow-800 dark:text-yellow-300 mb-2">Derechos de Autor</h4>
+                            <p class="text-sm text-yellow-700 dark:text-yellow-300">Protección de obras literarias y artísticas</p>
+                        </div>
+                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg text-center">
+                            <div class="text-3xl mb-2">🏷️</div>
+                            <h4 class="font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Marcas</h4>
+                            <p class="text-sm text-indigo-700 dark:text-indigo-300">Signos que diferencian productos o servicios</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Organismos en República Dominicana</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 dark:text-blue-300 mb-2">ONDA</h4>
+                                <p class="text-sm text-blue-700 dark:text-blue-300">Regula y protege los derechos de autor</p>
+                            </div>
+                            <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 dark:text-green-300 mb-2">ONAPI</h4>
+                                <p class="text-sm text-green-700 dark:text-green-300">Administra la propiedad industrial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recomendaciones Page -->
+        <div id="recomendaciones" class="page-content">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Recomendaciones y Recursos</h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">✅ Buenas Prácticas</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3 mt-0.5">1</span>
+                                <span class="text-gray-700 dark:text-gray-300"><strong>Citar correctamente:</strong> Reconocer a los autores de contenidos utilizados.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3 mt-0.5">2</span>
+                                <span class="text-gray-700 dark:text-gray-300"><strong>Evitar la piratería:</strong> No distribuir contenidos protegidos sin autorización.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3 mt-0.5">3</span>
+                                <span class="text-gray-700 dark:text-gray-300">Usar licencias libres y abiertas.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3 mt-0.5">4</span>
+                                <span class="text-gray-700 dark:text-gray-300">Registrar tus propias creaciones.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">🚀 Promover la Innovación</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+                                <p class="text-purple-700 dark:text-purple-300 text-sm">Fomentar la creatividad y la colaboración abierta</p>
+                            </div>
+                            <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                                <p class="text-blue-700 dark:text-blue-300 text-sm">Conocer cómo registrar patentes</p>
+                            </div>
+                            <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                                <p class="text-green-700 dark:text-green-300 text-sm">Capacitación constante en nuevas tecnologías</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">🌐 Fortalecer la Ciudadanía Digital</h3>
+                        <div class="space-y-3">
+                            <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                                <p class="text-indigo-700 dark:text-indigo-300">Enseñar habilidades digitales y protección de datos personales</p>
+                            </div>
+                            <div class="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg">
+                                <p class="text-teal-700 dark:text-teal-300">Promover la participación ética en comunidades digitales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bibliografía Page -->
+        <div id="bibliografia" class="page-content">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Bibliografía</h2>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">Kenton, W. (2025). What is human capital? Investopedia.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">Wikipedia. (2025). Capital humano.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">Hrider. Definición de «Capital intelectual».</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">La Epistemología y el Conocimiento Útil.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">¿Qué es la propiedad intelectual? About-ip.</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-2">
+                        <p class="text-gray-700 dark:text-gray-300">OEI. República Digital - Organización de Estados Iberoamericanos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 text-center py-6 mt-12">
+        <p class="text-gray-600 dark:text-gray-400 text-sm">
+            Universidad Abierta Para Adultos - Ciencia, Tecnología y Sociedad
+        </p>
+    </footer>
+
+    <script>
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Navigation functionality
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const pages = document.querySelectorAll('.page-content');
+
+        function showPage(pageId) {
+            // Hide all pages
+            pages.forEach(page => {
+                page.classList.remove('active', 'fade-in');
+            });
+
+            // Show selected page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active', 'fade-in');
+            }
+
+            // Update navigation buttons
+            navButtons.forEach(btn => {
+                btn.classList.remove('border-primary', 'text-primary', 'font-medium');
+                btn.classList.add('border-transparent', 'text-gray-600', 'dark:text-gray-300');
+            });
+
+            // Highlight active button
+            const activeBtn = document.querySelector(`[data-page="${pageId}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('border-primary', 'text-primary', 'font-medium');
+                activeBtn.classList.remove('border-transparent', 'text-gray-600', 'dark:text-gray-300');
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Add click event listeners
+        navButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const pageId = btn.getAttribute('data-page');
+                showPage(pageId);
+            });
+        });
+
+        // Initialize with editorial page
+        showPage('editorial');
+    </script>
+</body>
+</html>
